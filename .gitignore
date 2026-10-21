@@ -1,0 +1,20 @@
+# Code\ is Directory Snapshotter's git repository and the ONLY folder that goes on GitHub ("push to github.bat").
+# Build\, Website\ and Resources\ are beside it, so they are never in it.
+
+# Never public: keys, passwords, shared secrets (*.local.* / .env, with a blank *.example.* committed)
+*.local.*
+.env
+.env.*
+!.env.example
+
+# Snapshots (they list someone's files)
+*.dsnap
+
+# Build output and caches
+build/
+dist/
+__pycache__/
+*.pyc
+*.spec
+*.exe
+*.log
