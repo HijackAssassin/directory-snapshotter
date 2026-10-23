@@ -7,10 +7,10 @@ bundled into the exe as version.txt - the update check reads it. The website dow
 (Directory-Snapshotter-V<version>.exe) is a copy made by package-app.bat.
 
 Needs PyInstaller (python -m pip install --user pyinstaller). The exe's icon is
-icon-injector/ds_appicon.ico, handed to PyInstaller here. It must NOT be put on
+appicon.ico, handed to PyInstaller here. It must NOT be put on
 afterwards with rcedit: rcedit drops the program PyInstaller appends to a
 one-file exe, leaving a ~380 KB exe that cannot start (which is what happened to
-the V1.0.0 download). Without ds_appicon.ico, an icon is generated
+the V1.0.0 download). Without appicon.ico, an icon is generated
 (assets/app.ico) from the same shapes the app draws at runtime.
 """
 
@@ -74,7 +74,7 @@ def main():
         raise SystemExit(f"The version should look like 1.0.1 - it is {version!r}")
     print(f"Building {APP_NAME} V{version} ...")
 
-    ico = HERE / "icon-injector" / "ds_appicon.ico"
+    ico = HERE / "appicon.ico"
     if not ico.is_file():
         ico = HERE / "assets" / "app.ico"
         write_ico(ico)
