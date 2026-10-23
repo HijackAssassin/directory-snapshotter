@@ -1,6 +1,6 @@
 @echo off
 rem ==========================================================================
-rem  Directory Snapshotter's download. Website\"archive this build.bat" calls:
+rem  Directory Snapshotter's download. Website\"2 archive this build.bat" calls:
 rem      Code\package-app.bat <version> "<project folder>"
 rem  It is one exe, so the download is that exe with the version in its name:
 rem      Website\Directory Snapshotter\Directory Snapshotter.exe  ->  Website\Directory-Snapshotter-V<version>.exe

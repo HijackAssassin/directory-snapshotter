@@ -3,7 +3,7 @@ Update check for Directory Snapshotter.
 
 Reads the app's page on teamwolfgamers.online - the same "Latest Version" and
 Download button the page shows. The website fills those in from the download's
-file name when it is published ("push to website.bat"), so publishing a new
+file name when it is published ("3 push to website.bat"), so publishing a new
 build is all it takes for every copy of the app to see it. The domain is tried
 first and the duckdns name second, in case the domain ever lapses.
 
